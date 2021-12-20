@@ -1,0 +1,70 @@
+:root {
+    --color-blue-10: #06bee1;
+    --color-blue-20: #2b80d1;
+    --color-blue-30: #00538d;
+    --color-blue-40: #004688;
+    --color-blue-45: #004d97;
+    --color-blue-50: #002f53;
+
+    --color-light-blue-25: #bbedf6;
+--color-light-blue-30: #f1f5f8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: .5rem;
+    min-width: 400px;
+}
+
+input {
+    width: 100%;
+    padding: .5rem .7rem;
+    border: 1px solid var(--color-blue-40);
+    margin: .5rem 0;
+}
+
+input:focus {
+    background: var(--color-light-blue-30)   
+}
+
+button {
+    background: var(--color-blue-20);
+    border: 1px solid var(--color-blue-20);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    padding: .5rem .7rem;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: var(--color-blue-30);
+}
+
+#delete-btn {
+    background: #fff;
+    color: var(--color-blue-20);
+}
+
+#delete-btn:hover {
+    background: var(--color-light-blue-30);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: .7rem .5rem;
+}
+
+a {
+    color: var(--color-blue-45);
+}
