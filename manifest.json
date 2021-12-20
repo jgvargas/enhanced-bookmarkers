@@ -1,12 +1,9 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "version": "1.0",
     "name": "Enhanced Bookmarkers",
-    "action": {
-        "default_popup": "index.html",
+    "icons": {
         "default_icon": "icon-folder.png"
-    },
-    "permissions": [
-        "tabs"
-    ]
+    }
+    
 }
