@@ -5,9 +5,8 @@
     --color-blue-40: #004688;
     --color-blue-45: #004d97;
     --color-blue-50: #002f53;
-
     --color-light-blue-25: #bbedf6;
---color-light-blue-30: #f1f5f8;
+    --color-light-blue-30: #f1f5f8;
 }
 
 * {
@@ -17,9 +16,55 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    color: var(--color-blue-45);
+}
+
+ul {
+    list-style-type: none;
+}
+
 body {
-    margin: .5rem;
     min-width: 400px;
+    min-height: 500px;
+    color: #fff;
+}
+
+.container {
+    margin: 0 .5rem;
+}
+
+
+
+/*---------------
+    Logo space
+---------------*/
+
+#logo-space {
+    align-items: center;
+    background: var(--color-blue-10);
+    cursor: pointer;
+    color: var(--color-blue-40);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#logo h1 {
+    font-size: 1rem;
+}
+
+#logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*---------------
+    Tab space
+---------------*/
+
+#tab-space {
+    height: 400px;
 }
 
 input {
@@ -34,8 +79,8 @@ input:focus {
 }
 
 button {
-    background: var(--color-blue-20);
-    border: 1px solid var(--color-blue-20);
+    background: var(--color-blue-30);
+    border: 1px solid var(--color-blue-30);
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
@@ -45,26 +90,47 @@ button {
 }
 
 button:hover {
-    background: var(--color-blue-30);
+    background: var(--color-blue-20);
 }
 
 #delete-btn {
     background: #fff;
-    color: var(--color-blue-20);
+    color: var(--color-blue-30);
 }
 
 #delete-btn:hover {
     background: var(--color-light-blue-30);
 }
 
-ul {
-    list-style-type: none;
-}
-
-li {
+.item {
     margin: .7rem .5rem;
+    font-size: 1rem;
 }
 
-a {
-    color: var(--color-blue-45);
+/*---------------
+    COLLECTION space
+---------------*/
+
+#collection-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: var(--color-blue-45);
+}
+
+#collection-bar li {
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: .7rem .5rem;
+    text-align: center;
+}
+
+#collection-bar li:hover {
+    background: var(--color-blue-20);
+}
+
+.is-active {
+    color: var(--color-blue-10);
 }

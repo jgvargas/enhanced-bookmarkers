@@ -9,20 +9,35 @@
     <link rel="shortcut icon" href="#" />
 </head>
 <body>
-    <div class="container">
-        <label for="input-el">
+    <div id="app-container">
+        <section id="logo-space">
+            <h1>Enhanced Bookmarks</h1>
+            <img src="./img/icon-folder.png" alt="folder logo">
+        </section>
 
-        </label>
-        <input type="text" id="input-el">
+        <section id="tab-space" class="container">
+            
+            <label for="input-el">
     
-        <button id="input-btn">Save Input</button>
-        <button id="save-tab">Save Tab</button>
-        <button id="delete-btn">Delete All</button>
-    
-        <ul id="item-space">
-        </ul>
+            </label>
+            <input type="text" id="input-el">
+        
+            <button id="input-btn">Save Input</button>
+            <button id="save-tab">Save Tab</button>
+            <button id="delete-btn">Delete All</button>
+        
+            <ul id="item-space">
+            </ul>
+        </section>
+        <section>
+            <ul id="collection-bar">
+                <li id="user-tabs" class="is-active">My Tabs</li>
+                <li id="recent-tabs">Recent Tabs</li>
+                <li id="settings">Settings</li>
+            </ul>
+        </section>
     </div>
-    
+
     <script src="./index.js"></script>
 </body>
 </html>

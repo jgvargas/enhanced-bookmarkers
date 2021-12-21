@@ -1,9 +1,20 @@
+// DOM elements
 const inputBtn = document.getElementById("input-btn")
 const inputEl = document.getElementById("input-el")
 const deletBtn = document.getElementById("delete-btn")
-const localStorageEntries = JSON.parse( localStorage.getItem("myEntries") )
 const tabBtn = document.getElementById("save-tab")
 
+const bottomMenu = document.getElementById("collection-bar")
+const userTabs = document.getElementById("user-tabs")
+
+userTabs.addEventListener('click', () => {
+    userTabs.classList.toggle("is-active")
+})
+
+// Local Storage
+const localStorageEntries = JSON.parse( localStorage.getItem("myEntries") )
+
+//
 let itemSpace = document.getElementById("item-space")
 let myItems = []
 
@@ -16,8 +27,6 @@ tabBtn.addEventListener("click", () => {
         render(myItems)
     })
     /* Firefox */
-
-    
 })
 
 inputBtn.addEventListener("click", () => {
